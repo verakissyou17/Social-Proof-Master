@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*, 
+*::after, 
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'League Spartan', sans-serif;
+  margin: 0 auto;
+  background-color: var(--white);
+  background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg'); 
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -10vh left -5vw, bottom -20vh right;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6.5vw, 3.5rem);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: bold;
+  color: var(--very-dark-magenta);
+  line-height: .9;
+  margin-bottom: .6em;
+}
+
+h2 {
+  color: var(--white);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.first--wrapper,
+.second--wrapper, 
+.rating-stars,
+.review--space,
+.report,
+.bestTech,
+.profile--info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.first_section {
+ width: 35%;
+}
+
+.first_section p {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--dark-grayish-magenta);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.second_section {
+  width: 60%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+} 
+
+.second_section p {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--very-dark-magenta);
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.rating-stars img {
+  padding: .25em;
+}
+
+.report {
+   margin-right: 3em;
+}
+
+.review--space {
+  margin-right: 6em;
+}
+
+.bestTech,
+.review--space,
+.report {
+  background-color: var(--light-grayish-magenta);
+  border-radius: 5px;
+  padding-block: 1em;
+  padding-inline: 1em;
+  margin-block: .5em;
+  width: 80%;
+}
+
+.second--wrapper {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.second--wrapper article {
+  background-color: var(--very-dark-magenta);
+  border-radius: 8px;
+  padding: 2.5em 2.5em 2em;
+  flex: 1;
+}
+
+.irene {
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+}
+
+.anne {
+  margin-left: 1.5em;
+  margin-top: 3em;
+} 
+
+article p {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--light-grayish-magenta);
+  line-height: 1.5;
+}
+
+.profile--info {
+  margin-bottom: 1.3em;
+}
+
+.profile--info img {
+  border-radius: 50%;
+  width: 45px;
+  margin-right: 1em;
+}
+
+.name--section p {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--soft-pink);
+  line-height: 1;
+}
+
+.attribution {
+  margin-top: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 550px) {
+
+main {
+  max-width: 330px;
+}
+
+h1,
+.rating-stars {
+  margin-bottom: .5em;
+}
+
+.first_section {
+  padding: 1em;
+}
+
+.first--wrapper,
+.second--wrapper, 
+.review--space,
+.report,
+.bestTech {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first_section,
+.second_section,
+.review--space,
+.bestTech,
+.report {
+  width: 100%;
+  margin: .5em auto;
+  text-align: center;
+}
+
+.second_section {
+  margin-top: 1em;
+}
+
+.second--wrapper {
+  margin-top: 2em;
+}
+
+.colton,
+.irene,
+.anne {
+  margin: 0 auto 1em;
+}
+}
+
+@media (min-width: 550px) and (max-width: 1000px) {
+  main {
+    padding: 1em;
+  }
+
+  .review--space,
+  .report,
+  .bestTech {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .colton,
+  .irene,
+  .anne {
+    margin: 1em;
+  }
+}
+
+
+
+
+
+
+
+
