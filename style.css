@@ -27,8 +27,8 @@ body {
   margin: 0 auto;
   background-color: var(--white);
   background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg'); 
-  background-repeat: no-repeat, no-repeat;
-  background-position: top -10vh left -5vw, bottom -20vh right;
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 
 img {
@@ -137,12 +137,12 @@ h2 {
 
 .irene {
   margin-left: 1.5em;
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 .anne {
   margin-left: 1.5em;
-  margin-top: 3em;
+  margin-top: 4em;
 } 
 
 article p {
@@ -181,6 +181,12 @@ article p {
 }
 
 @media (max-width: 550px) {
+
+  body {
+    background-image: url('./images/bg-pattern-top-mobile.svg'), url('./images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, right bottom -10vh;
+  }
 
 main {
   max-width: 330px;
